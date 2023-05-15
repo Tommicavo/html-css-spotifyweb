@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Spotify</title>
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;700&family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="top_container flex">
+            <div class="sidebar_container">
+                <div class="sidebar xs flex">
+                    <div class="xs_top">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_container logo_small"><img src="img/logo-small.svg" alt="logo_small"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_container"><img src="img/home.svg" alt="home"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_container"><img src="img/search.svg" alt="search"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_container"><img src="img/libreria.svg" alt="libreria"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                    <div class="xs_bottom">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_container download"><img src="img/download.svg" alt="download"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_container profile"><img src="img/profile.svg" alt="profile"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="sidebar sml">
+                    <div class="sml_top">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="item_container">
+                                            <div class="img_container logo"><img src="img/logo.svg" alt="logo"></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item_container flex active">
+                                            <div class="img_container"><img src="img/home.svg" alt="home"></div>
+                                            <span class="item_desc">Home</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item_container flex active">
+                                            <div class="img_container"><img src="img/search.svg" alt="search"></div>
+                                            <span class="item_desc">Cerca</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item_container flex active">
+                                            <div class="img_container"><img src="img/libreria.svg" alt="libreria"></div>
+                                            <span class="item_desc">La tua libreria</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="playlist">
+                            <div class="pl_title">PLAYLIST</div>
+                            <a href="">
+                                <div class="item_container flex">
+                                    <i class="fa-sharp fa-solid fa-square-plus"></i>
+                                    <div class="item_desc">Crea Playlist</div>
+                                </div>
+                            </a>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                    <div class="sml_bottom">
+                        <a href="#">
+                            <div class="item_container flex">
+                                <div class="img_container"><img src="img/download.svg" alt="download"></div>
+                                <div class="item_desc">Installa app</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                        <div class="pd_10"><div class="line"></div></div>
+                            <div class="item_container flex">
+                                <div class="img_container profile"><img src="img/profile.svg" alt="profile"></div>
+                                <div class="item_desc">John Doe</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <main>
+                <header>
+                    <a href="#" class="btn">EFFETTUA L'UPGRADE</a>
+                </header>
+                <div class="main_content">
+                    <section class="menu_bar flex">
+                        <div class="menu_card flex">
+                            <span class="name">in evidenza</span>
+                            <div class="active"></div>
+                        </div>
+                        <div class="menu_card flex">
+                            <span class="name">podcast</span>
+                            <div class="active"></div>
+                        </div>
+                        <div class="menu_card flex">
+                            <span class="name">classifiche</span>
+                            <div class="active"></div>
+                        </div>
+                        <div class="menu_card flex">
+                            <span class="name">generi e mood</span>
+                            <div class="active"></div>
+                        </div>
+                        <div class="menu_card flex">
+                            <span class="name">nuove uscite</span>
+                            <div class="active"></div>
+                        </div>
+                        <div class="menu_card flex">
+                            <span class="name">scopri</span>
+                            <div class="active"></div>
+                        </div>
+                    </section>
+
+                    <section class="recently">
+                        <h2 class="section_title">Recently Played</h2>
+                        <div class="row flex">
+                            <div class="card">
+                                <div class="card_cover"><img src="img/metal_lifting.jpg" alt="metal"></div>
+                                <h3 class="card_title">Heavy Metal</h3>
+                                <span class="card_sub">Subtitle</span>
+                            </div>
+                            <div class="card">
+                                <div class="card_cover"><img src="img/stranger.jpeg" alt="stranger"></div>
+                                <h3 class="card_title">Stranger Things, Vol. 1 (a Netflix Original Soundtrack)</h3>
+                                <span class="card_sub">Subtitle</span>
+                            </div>
+                            <div class="card">
+                                <div class="card_cover"><img src="img/aquietplace.jpeg" alt="aquietplace"></div>
+                                <h3 class="card_title">A Quiet Place</h3>
+                                <span class="card_sub">Subtitle</span>
+                            </div>
+                            <div class="card">
+                                <div class="card_cover"><img src="img/split.jpeg" alt="split"></div>
+                                <h3 class="card_title">Split</h3>
+                                <span class="card_sub">Subtitle</span>
+                            </div>
+                            <div class="card">
+                                <div class="card_cover"><img src="img/cure.jpeg" alt="cure"></div>
+                                <h3 class="card_title">A Cure for wellness</h3>
+                                <span class="card_sub">Subtitle</span>
+                            </div>
+                            <div class="card">
+                                <div class="card_cover"><img src="img/sinister.jpeg" alt="sinister"></div>
+                                <h3 class="card_title">Sinister</h3>
+                                <span class="card_sub">Subtitle</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="createdforyou">
+                        <h2 class="section_title">Creato per John Doe</h2>
+                        <div class="section_subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
+                        <div class="row flex">
+                            <div class="card">
+                                <div class="card_cover"><img src="img/radar.jpeg" alt="radar"></div>
+                                <h3 class="card_title">Release Radar</h3>
+                            </div>
+                            <div class="card">
+                                <div class="card_cover"><img src="img/mixdaily.jpeg" alt="mixdaily"></div>
+                                <h3 class="card_title">Daily Mix 1</h3>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="artist">
+                        <h2 class="section_title">Artisti più popolari</h2>
+                        <div class="section_subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
+                        <div class="row flex">
+                            <div class="card">
+                                <div class="card_cover"><img src="img/youg.jpeg" alt="young"></div>
+                                <h3 class="card_title">Young</h3>
+                            </div>
+                            <div class="card">
+                                <div class="card_cover"><img src="img/einaudi.jpeg" alt="einaudi"></div>
+                                <h3 class="card_title">Einaudi</h3>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </main>
+        </div>
+        <footer></footer>
+    </body>
+</html>
