@@ -54,6 +54,7 @@ section{
 footer{
     height: var(--h_footer);
     background-color: #282828;
+    color: var(--main_text);
 }
 
 .sidebar_container{
@@ -277,10 +278,106 @@ li:hover .active{
     color: var(--text);
 }
 
+/* Footer */
+.footer_container{
+    padding: 0.5rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+footer a{
+    color: var(--main_text);
+}
+
+.footer_left{
+    flex: 0 0 20%;
+    align-items: center;
+}
+
+.footer_center{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.center_bottom{
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.footer_right{
+    flex: 0 0 20%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.img_footer{
+    width: 50px;
+}
+
+.info_footer{
+    padding: 0 10px;
+}
+
+.track_title{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.name_cont, .icon_left{
+    flex-wrap: wrap;
+}
+
+.track_name{
+    font-size: 10px;
+    flex-basis: 100%;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.icon_left > *{
+    flex-basis: 100%;
+}
+
+.track{
+    border-bottom: 2px solid gray;
+    border-radius: 10px;
+}
+
+.track.progres_bar{
+    width: 50%;
+}
+
+.track.vol_bar{
+    width: 30%;
+}
+
+.song{
+    padding: 0 5px;
+}
+
+
 /* Font Awesome */
 .fa-square-plus{
     font-size: 40px;
     color: var(--text);
+}
+
+.footer_right .fa-solid,
+.icon_left .fa-regular{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.center_top > *{
+    font-size: 24px;
+    font-weight: 800;
+    padding: 5px 10px;
+}
+
+.center_top .fa-circle-play{
+    font-size: 28px;
 }
 
 /* Media Query */
@@ -305,12 +402,20 @@ li:hover .active{
     .menu_card{
         flex-basis: calc(100% / 3);
     }
+
+    .track_name{
+        flex-basis: 50%;
+    }
 }
 
 /* tablet */
 @media screen and (min-width: 768px){
     .menu_card{
         flex-basis: calc(100% / 3);
+    }
+
+    .icon_left > *{
+        flex-basis: 50%;
     }
 }
 
@@ -322,6 +427,10 @@ li:hover .active{
 
     .card{
         flex-basis: 25%;
+    }
+
+    .track.progres_bar{
+        width: 70%;
     }
 }
 
