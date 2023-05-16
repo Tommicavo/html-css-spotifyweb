@@ -71,14 +71,20 @@ footer{
 
 main{
     flex-grow: 1;
+    overflow: auto;
+}
+
+main a{
+    color: var(--main_text);
 }
 
 header{
     height: var(--h_header);
-    position: fixed;
-    left: var(--w_sidebar_xs);
+
+    position: sticky;
+    left: 0;
+    right: 0;
     top: 0;
-    right: 17px;
 
     display: flex;
     justify-content: flex-end;
@@ -88,9 +94,7 @@ header{
 }
 
 .main_content{
-    padding-top: var(--h_header);
     height: calc(100vh - var(--h_footer));
-    overflow: auto;
     color: var(--text);
 }
 
@@ -214,9 +218,6 @@ li:hover .active{
 .menu_card{
     padding: 5px 10px;
     flex: 1 0 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .menu_card .name{
@@ -228,8 +229,12 @@ li:hover .active{
 
 .menu_card .active{
     width: 50px;
-    border-bottom: 1px solid greenyellow;
+    border-bottom: 1px solid transparent;
     margin: 0 auto;
+}
+
+.menu_card:hover .active{
+    border-bottom: 1px solid greenyellow;
 }
 
 /* Recently Played */
@@ -264,6 +269,22 @@ li:hover .active{
 .card_cover{
     max-width: 100%;
     height: auto;
+    position: relative;
+}
+
+.card_cover .fa-circle-play{
+    font-size: 5rem;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--main_text);
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.card_cover:hover .fa-circle-play{
+    display: block;
 }
 
 .card_title{
@@ -393,10 +414,6 @@ footer a{
 
     .sidebar.sml{
         display: flex;
-    }
-
-    header{
-        left: var(--w_sidebar_sml);
     }
 
     .menu_card{
